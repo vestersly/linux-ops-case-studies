@@ -32,3 +32,14 @@ Service restarts provided only temporary relief, with failures recurring shortly
 
 System monitoring showed normal CPU utilization, available memory, and sufficient disk space, making the failure non-obvious from standard host-level metrics.
 
+---
+
+## Investigation & Findings findings
+
+Initial investigation focused on common system-level bottlenecks, including CPU saturation, memory exhaustion, and disk I/O pressure. None of these metrics showed abnormal behavior during the time of the failures.
+
+Application logs, however, indicated repeated errors when attempting to spawn new processes and open additional file descriptors.
+
+Further inspection of the running service revealed that it was operating under restrictive operating system–enforced resource limits. These limits were reached during normal workload conditions, despite the host system having sufficient available resources.
+
+Once the defined limits were exceeded, the kernel denied further resource allocation requests, leading to application-level errors and eventual service instability.
