@@ -38,4 +38,28 @@ ip a
 ip route
 
 
+### Topology (ASCII)
+
+```text
++--------------------------------------------------------------+
+| Host Machine: Ubuntu 22.04                                   |
+|                                                              |
+|  +-------------------- Oracle VirtualBox ------------------+ |
+|  |                                                          | |
+|  |   +-------------------+        +----------------------+   | |
+|  |   | VM 1: Kali Linux   |        | VM 2: Ubuntu Linux   |   | |
+|  |   | (Security / Tools) |        | (Peer / Client VM)   |   | |
+|  |   +---------+----------+        +----------+-----------+   | |
+|  |             |                              |               | |
+|  |             +--------------+  +------------+               | |
+|  |                            |  |                            | |
+|  |         VirtualBox Network (shared segment)                 | |
+|  |     (e.g., Host-Only / Internal / Bridged*)                 | |
+|  |                            |                               | |
+|  +----------------------------+-------------------------------+ |
+|                                                              |
++--------------------------------------------------------------+
+
+*Bridged depends on your LAN policy; Host-Only/Internal are common for lab VM-to-VM testing.
+
 
