@@ -34,7 +34,8 @@ System monitoring showed normal CPU utilization, available memory, and sufficien
 
 ---
 
-## Investigation & Findings findings
+## Investigation & Findings
+
 
 Initial investigation focused on common system-level bottlenecks, including CPU saturation, memory exhaustion, and disk I/O pressure. None of these metrics showed abnormal behavior during the time of the failures.
 
