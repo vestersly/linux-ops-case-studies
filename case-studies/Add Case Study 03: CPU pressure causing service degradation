@@ -27,21 +27,3 @@ Application / Service
 
 ---
 
-## Reproduction Steps (Controlled CPU Pressure)
-
-The following steps describe how CPU pressure was intentionally generated
-to observe service degradation behavior under sustained load.
-
-> ⚠️ Execute these steps only in a test or lab environment.
-
-### Step 1: Verify baseline CPU state
-
-Confirm the system is healthy and mostly idle before inducing load:
-
-```bash
-uptime
-top
-
-
----
-
