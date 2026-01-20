@@ -27,3 +27,7 @@ Application / Service
         |
         v
  Service disruption / crash
+
+
+---
+
