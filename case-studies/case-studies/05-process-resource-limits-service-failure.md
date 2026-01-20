@@ -21,3 +21,14 @@ Application / Service
         |
         v
  Service disruption
+
+---
+
+## Detection & Symptoms
+
+The service began returning intermittent errors and failed to handle new requests under normal traffic levels.
+
+Service restarts provided only temporary relief, with failures recurring shortly after startup.
+
+System monitoring showed normal CPU utilization, available memory, and sufficient disk space, making the failure non-obvious from standard host-level metrics.
+
