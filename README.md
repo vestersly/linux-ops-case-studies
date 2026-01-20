@@ -32,3 +32,7 @@ Each case study follows the same structure:
 
 - **02 — Disk pressure causing systemd service failure**  
   → [View case study](case-studies/02-disk-pressure-systemd-service-failure.md)
+
+- **03 — CPU pressure causing service degradation**
+  → [View case study](case-studies/03-cpu-pressure-service-degradation.md)
+
