@@ -29,7 +29,8 @@ Each case study follows the same structure:
 
 > 🚧 Case studies are added incrementally to reflect real operational scenarios.
 
-- **01 — VM-to-VM authenticated connectivity (VirtualBox)** *(in progress)*
+- **01 — VM-to-VM authenticated connectivity (VirtualBox)** — documented operational scenario
+
 
 ---
 
