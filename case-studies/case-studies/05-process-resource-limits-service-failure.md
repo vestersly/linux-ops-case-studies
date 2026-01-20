@@ -44,3 +44,14 @@ Application logs, however, indicated repeated errors when attempting to spawn ne
 Further inspection of the running service revealed that it was operating under restrictive operating system–enforced resource limits. These limits were reached during normal workload conditions, despite the host system having sufficient available resources.
 
 Once the defined limits were exceeded, the kernel denied further resource allocation requests, leading to application-level errors and eventual service instability.
+
+---
+
+## Root Cause Analysis
+
+The root cause of the service failure was the enforcement of restrictive process-level resource limits configured at the operating system level.
+
+These limits constrained the number of processes and file descriptors available to the service, causing it to exhaust allowable resources during normal operation.
+
+Once the limits were reached, the Linux kernel denied further allocation requests, leading to application errors and repeated service failures despite sufficient system-wide resources.
+
