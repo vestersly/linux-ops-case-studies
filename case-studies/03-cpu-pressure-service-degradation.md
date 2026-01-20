@@ -1,1 +1,26 @@
 
+# Case Study 03 — CPU Pressure Causing Service Degradation
+
+---
+
+## Failure Flow (ASCII)
+
+```text
+Client Requests
+      |
+      v
+Application / Service
+      |
+      v
+ systemd service
+      |
+      v
+ CPU Scheduler
+      |
+ [CPU SATURATED / LOAD SPIKE]
+      |
+ Context switching delays
+      |
+ Service latency / timeouts
+      |
+ Partial service degradation
