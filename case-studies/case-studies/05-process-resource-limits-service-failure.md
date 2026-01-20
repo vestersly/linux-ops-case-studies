@@ -55,3 +55,14 @@ These limits constrained the number of processes and file descriptors available 
 
 Once the limits were reached, the Linux kernel denied further allocation requests, leading to application errors and repeated service failures despite sufficient system-wide resources.
 
+---
+
+## Resolution & Remediation
+
+The immediate remediation involved adjusting the process-level resource limits applied to the service to align with its actual runtime requirements.
+
+Limits on the maximum number of open file descriptors and allowable processes were increased to support normal workload behavior.
+
+After updating the limits, the service was restarted and monitored under load to confirm stability. No further allocation errors or service interruptions were observed.
+
+
