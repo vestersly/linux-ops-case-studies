@@ -65,4 +65,26 @@ Limits on the maximum number of open file descriptors and allowable processes we
 
 After updating the limits, the service was restarted and monitored under load to confirm stability. No further allocation errors or service interruptions were observed.
 
+---
+
+## Preventive Measures
+
+Process-level resource limits were reviewed and formally documented as part of the service configuration to ensure they reflect real workload requirements.
+
+Monitoring was enhanced to include visibility into process-level constraints, such as file descriptor usage and process counts, in addition to standard system metrics.
+
+Operational runbooks were updated to explicitly include process-level limit checks during incident investigation to reduce future troubleshooting time.
+
+---
+
+## Key Takeaways
+
+System-wide resource availability does not guarantee service reliability if process-level limits are incorrectly configured.
+
+Failures caused by OS-enforced limits may not be visible through standard CPU, memory, or disk monitoring alone.
+
+Effective incident analysis requires examining multiple layers, from application behavior to kernel-enforced constraints.
+
+Clear documentation, appropriate limit configuration, and targeted monitoring are essential for preventing similar service disruptions.
+
 
