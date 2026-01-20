@@ -33,7 +33,25 @@ Each case study follows the same structure:
 - **02 — Disk pressure causing systemd service failure**  
   → [View case study](case-studies/02-disk-pressure-systemd-service-failure.md)
 
-- **03 — CPU pressure causing service degradation**
+- **03 — CPU pressure causing service degradation**  
   → [View case study](case-studies/03-cpu-pressure-service-degradation.md)
+
+- **04 — Memory pressure causing OOM kill**  
+  → (in progress)
+
+
+
+  ---
+
+## Roadmap
+
+Upcoming case studies will focus on advanced Linux failure modes and
+cloud-relevant operational scenarios, including:
+
+- Memory pressure and OOM killer behavior
+- Process-level resource limits and cgroups
+- Multi-service failure propagation
+- Mapping Linux failure modes to AWS infrastructure signals
+
 
 
