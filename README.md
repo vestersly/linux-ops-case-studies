@@ -1,2 +1,1 @@
-# linux-ops-case-studies
-Operational Linux case studies in a virtualized environment (Kali &amp; Ubuntu on Oracle VirtualBox). Real troubleshooting: networking, authentication, systemd, disk &amp; CPU pressure—mapped to AWS EC2, VPC, and SRE operations.
+Incident-driven Linux operations case studies with Kali Linux and Ubuntu on Oracle VirtualBox. Covers VM networking, authentication, systemd failures, disk and CPU pressure, and OS-level troubleshooting with direct AWS relevance.
