@@ -28,7 +28,7 @@ Each case study follows the same structure:
 ## Case Studies
 
 - **01 — VM-to-VM authenticated connectivity (VirtualBox)**  
-  → `case-studies/01-vm-to-vm-authenticated-connectivity.md`
+  → [View case study](case-studies/01-vm-to-vm-authenticated-connectivity.md)
 
 - **02 — Disk pressure causing systemd service failure**  
-  → `case-studies/02-disk-pressure-systemd-service-failure.md`
+  → [View case study](case-studies/02-disk-pressure-systemd-service-failure.md)
